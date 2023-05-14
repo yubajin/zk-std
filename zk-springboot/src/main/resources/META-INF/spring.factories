@@ -1,0 +1,9 @@
+#org.springframework.boot.env.EnvironmentPostProcessor=\
+#  config.CustomEnvironmentPostProcessor
+
+org.springframework.context.ApplicationContextInitializer=\
+  cn.yubajin.std.config.ZookeeperApplicationContextInitializer
+
+cn.yubajin.std.Locator.PropertySourceLocator = cn.yubajin.std.Locator.impl.LocalCustomPropertySourceLocator,\
+  cn.yubajin.std.Locator.impl.ZookeeperPropertySourceLocator
+
